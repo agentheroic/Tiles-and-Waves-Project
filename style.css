@@ -1,7 +1,11 @@
-div{
-    width: 1%;
-    height: 1%;
-    margin: 1px;
-    background-color: black;
-    color: white;
+table{
+    border-spacing: 8px;
+}
+td{
+    
+    border: 2px solid black;
+    
+}
+td:hover{
+    background-color: aqua;
 }
