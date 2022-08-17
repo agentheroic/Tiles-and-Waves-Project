@@ -8,11 +8,19 @@ inputBtn.addEventListener("click", function () {
     order = inputEl.value 
     console.log(order)
     for (let i = 0; i < order; i++) {
+        
+        containerEl.innerHTML += `
+                <tr class='flex' id='${i}'></tr>
+                `
+                const row = document.getElementById(`${i}`)
+    console.log(typeof row)
         for (let i = 0; i < order; i++) {
-            containerEl.innerHTML += `
-                <div>D</div>
+            row.innerHTML += `
+                <td>h</td>
             `
+            
         }
+
     }
     console.log("order entered")
 })
