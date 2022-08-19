@@ -27,12 +27,11 @@ function play() {
 // }
 inputBtn.addEventListener("click", function () {
     order = inputEl.value
-<<<<<<< HEAD
+
     if (order > 17) {
 
     }
-=======
->>>>>>> Anish
+
     console.log(order)
     for (let i = 0; i < order; i++) {
 
@@ -40,44 +39,51 @@ inputBtn.addEventListener("click", function () {
                 <tr class='flex' id='${i}'></tr>
                 `
         const row = document.getElementById(`${i}`)
-<<<<<<< HEAD
+
         console.log(typeof row)
-        if (order <= 17) {
+        if (order <= 10) {
             for (let i = 0; i < order; i++) {
                 row.innerHTML += `
-                <td class='w-8 h-8 m-0.5 text-center'></td>
+                <td class='w-14 h-14 m-0.5 text-center' onmouseover="play()" onmouseout="memory()"></td>
+            `
+            }
+        }
+        else if (order <= 17) {
+            for (let i = 0; i < order; i++) {
+                row.innerHTML += `
+                <td class='w-8 h-8 m-0.5 text-center' onmouseover="play()" onmouseout="memory()"></td>
             `
             }
         }
         else if(order <= 34){
             for (let i = 0; i < order; i++) {
                 row.innerHTML += `
-                <td class='w-4 h-4 m-px text-center'></td>
+                <td class='w-4 h-4 m-px text-center' onmouseover="play()" onmouseout="memory()"></td>
             `
             }
         }
         else {
             for (let i = 0; i < order; i++) {
                 row.innerHTML += `
-                <td class='w-2 h-2 m-px text-center'></td>
+                <td class='w-2 h-2 m-px text-center' onmouseover="play()" onmouseout="memory()"></td>
             `
             }
         }
         console.log("order entered")
     }})
-=======
-        for (let i = 0; i < order; i++) {
-            row.innerHTML += `
-                <td>h</td>
-            `
 
-        }
+//         for (let i = 0; i < order; i++) {
+//             row.innerHTML += `
+//                 <td>h</td>
+//             `
 
-    }
-    console.log("order entered")
+//         }
 
-}
+//     }
+//     console.log("order entered")
 
-)
->>>>>>> Anish
+// }
+
+// )
+
 
