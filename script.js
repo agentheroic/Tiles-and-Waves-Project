@@ -62,7 +62,7 @@ inputBtn.addEventListener("click", function () {
         const row = document.getElementById(`tr${i}`)
 
         console.log(typeof row)
-        if (order <= 10) {
+        if (order <= 9) {
             for (let i = 0; i < order; i++) {
                 row.innerHTML += `
 
@@ -70,7 +70,7 @@ inputBtn.addEventListener("click", function () {
             `
             }
         }
-        else if (order <= 17) {
+        else if (order <= 15) {
             for (let i = 0; i < order; i++) {
                 row.innerHTML += `
 
@@ -78,7 +78,7 @@ inputBtn.addEventListener("click", function () {
             `
             }
         }
-        else if(order <= 34){
+        else if(order <= 30){
             for (let i = 0; i < order; i++) {
                 row.innerHTML += `
 
