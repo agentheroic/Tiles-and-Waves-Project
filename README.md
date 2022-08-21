@@ -6,4 +6,4 @@ On hovering over a tile, music plays with an algorithm.
 
 Work distribution: 
     Anishwar - Algorithm for music(on hover play and stop functions) and reload function
-    Kaushal - Matrix building and design application
+    Kaushal - Matrix building and application of design
