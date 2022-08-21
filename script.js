@@ -44,6 +44,12 @@ function stop(){
 // function test(){
 // audio[0].play();
 // }
+
+function btn() {
+    console.log("FUNCITON CALLED LESGOO");
+    document.getElementById("reload").style="opacity: 1";
+}
+
 inputBtn.addEventListener("click", function () {
     order = inputEl.value
     inpDiv.classList.add("hidden")

@@ -17,3 +17,21 @@ body{
     background-size: cover;
     overflow: hidden;
 }
+
+.reload
+{
+    border: 2px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    opacity: 0;
+    margin-bottom: 15px;
+    margin-top: 100px;
+}
+
+.rightDiv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
