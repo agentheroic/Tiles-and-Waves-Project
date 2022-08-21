@@ -47,13 +47,13 @@ function stop(){
 inputBtn.addEventListener("click", function () {
     order = inputEl.value
     inpDiv.classList.add("hidden")
-    let j = 0
+    let j = 1
     for (let i = 0; i < order; i++) {
 
         containerEl.innerHTML += `
-                <tr class='flex' id='${i}'></tr>
+                <tr class='flex' id='tr${i}'></tr>
                 `
-        const row = document.getElementById(`${i}`)
+        const row = document.getElementById(`tr${i}`)
 
         console.log(typeof row)
         if (order <= 10) {
@@ -88,7 +88,6 @@ inputBtn.addEventListener("click", function () {
             `
             }
         }
-        j++
         console.log("order entered")
     }})
 
